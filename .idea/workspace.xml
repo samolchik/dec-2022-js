@@ -4,12 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e620b385-9bc9-4b15-9b84-933b7db20414" name="Changes" comment="add new directory lesson1">
-      <change afterPath="$PROJECT_DIR$/lesson2/arrAndOdj.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lesson2/if.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lesson2/index.html" afterDir="false" />
+    <list default="true" id="e620b385-9bc9-4b15-9b84-933b7db20414" name="Changes" comment="add new directory lesson1 &quot;array, object and if&quot;">
+      <change afterPath="$PROJECT_DIR$/lesson3/additional-1.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson3/additional-2.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson3/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson3/loops.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson3/main.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lesson1/resolve.js" beforeDir="false" afterPath="$PROJECT_DIR$/lesson1/resolve.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson2/if.js" beforeDir="false" afterPath="$PROJECT_DIR$/lesson2/if.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,6 +22,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
+        <option value="CSS File" />
         <option value="JavaScript File" />
       </list>
     </option>
@@ -45,6 +48,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "last_opened_file_path": "/Users/olgasamijlenko/IdeaProjects/dec-2022-js",
+    "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -65,7 +69,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1675192535561</updated>
-      <workItem from="1675192536741" duration="25805000" />
+      <workItem from="1675192536741" duration="53670000" />
     </task>
     <task id="LOCAL-00001" summary="add new directory lesson1">
       <created>1675195199028</created>
@@ -74,7 +78,14 @@
       <option name="project" value="LOCAL" />
       <updated>1675195199028</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="add new directory lesson1 &quot;array, object and if&quot;">
+      <created>1675520126278</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1675520126278</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -82,6 +93,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="add new directory lesson1" />
-    <option name="LAST_COMMIT_MESSAGE" value="add new directory lesson1" />
+    <MESSAGE value="add new directory lesson1 &quot;array, object and if&quot;" />
+    <option name="LAST_COMMIT_MESSAGE" value="add new directory lesson1 &quot;array, object and if&quot;" />
   </component>
 </project>

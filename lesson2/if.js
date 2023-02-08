@@ -11,11 +11,10 @@ if (x !== 0) {
     console.log('Incorrect');
 }
 
-
 // - Дано змінну time яка рівна числу від 0 до 59. Потрібно написати код, який перевірить,
 // до якої четверті години попадає число (в першу, другу, третю или четверту частину години).
 
-let time = prompt('Write a number from 0 to 59 and you are knowing, how part is now!');
+// let time = prompt('Write a number from 0 to 59 and you are knowing, how part is now!');
 
 if (time < 0 || time > 59) {
     console.log('Incorrect number!');
@@ -29,11 +28,24 @@ if (time < 0 || time > 59) {
     console.log('It is first part of an hour');
 }
 
+// or
+
+if (time > 0 && time <= 15) {
+    console.log('It is first part of an hour');
+} else if (time > 15 && time <= 30) {
+    console.log('It is second part of an hour');
+} else if (time > 30 && time <= 45) {
+    console.log('It is third part of an hour');
+} else if (time > 45 && time < 60) {
+    console.log('It is quarter part of an hour');
+} else {
+    console.log('Incorrect time');
+}
 
 // - Скласти розклад на тиждень за домопоги switch. Користувач вводить порядковий номер дня тижня і
 // на екрані відображається інфа що заплановано на цей день (можна замість плану на день, назву дня англійською).
 
-let schedule = prompt('What day do you need a schedule for? Enter a number of day from 1 to 5!');
+// let schedule = prompt('What day do you need a schedule for? Enter a number of day from 1 to 5!');
 
 switch (schedule) {
     case '1':
