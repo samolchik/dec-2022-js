@@ -4,16 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e620b385-9bc9-4b15-9b84-933b7db20414" name="Changes" comment="add new directory lesson3 &quot;loops&quot;">
-      <change afterPath="$PROJECT_DIR$/lesson3/additional-3.js" afterDir="false" />
+    <list default="true" id="e620b385-9bc9-4b15-9b84-933b7db20414" name="Changes" comment="made changes and add file additional-3.js">
       <change afterPath="$PROJECT_DIR$/lesson4/functions.js" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/lesson4/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lesson3/additional-1.js" beforeDir="false" afterPath="$PROJECT_DIR$/lesson3/additional-1.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lesson3/additional-2.js" beforeDir="false" afterPath="$PROJECT_DIR$/lesson3/additional-2.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lesson3/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/lesson3/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lesson3/loops.js" beforeDir="false" afterPath="$PROJECT_DIR$/lesson3/loops.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lesson3/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/lesson3/main.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,7 +65,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1675192535561</updated>
-      <workItem from="1675192536741" duration="90650000" />
+      <workItem from="1675192536741" duration="90969000" />
     </task>
     <task id="LOCAL-00001" summary="add new directory lesson1">
       <created>1675195199028</created>
@@ -95,7 +88,14 @@
       <option name="project" value="LOCAL" />
       <updated>1675865456173</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="made changes and add file additional-3.js">
+      <created>1676240032249</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1676240032249</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -105,6 +105,7 @@
     <MESSAGE value="add new directory lesson1" />
     <MESSAGE value="add new directory lesson1 &quot;array, object and if&quot;" />
     <MESSAGE value="add new directory lesson3 &quot;loops&quot;" />
-    <option name="LAST_COMMIT_MESSAGE" value="add new directory lesson3 &quot;loops&quot;" />
+    <MESSAGE value="made changes and add file additional-3.js" />
+    <option name="LAST_COMMIT_MESSAGE" value="made changes and add file additional-3.js" />
   </component>
 </project>
