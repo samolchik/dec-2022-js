@@ -56,7 +56,7 @@ for (let i = 0; i < arr.length; i++) {
 
 let z = 0;
 while (z < arr.length) {
-    if (z % 2 === 0)
+    if (arr[z] % 2 === 0)
         console.log('whilePairIndex = ', arr[z]);
     z++;
 }
@@ -64,7 +64,7 @@ while (z < arr.length) {
 // 1.6. перебрати циклом for та вивести  числа тільки парні  значення
 
 for (let i = 0; i < arr.length; i++) {
-    if (i % 2 === 0) {
+    if (arr[i] % 2 === 0) {
         console.log('forPairIndex = ', arr[i])
     }
 }
@@ -83,7 +83,7 @@ console.log('arrOkten = ', arr);
 
 let arrReversed = [2, 17, 13, 6, 22, 31, 45, 66, 100, -18];
 
-for (let i = arrReversed.length; i >= 0; i--) {
+for (let i = arrReversed.length - 1; i >= 0; i--) {
     console.log('arrReversed = ', arrReversed[i]);
 }
 
@@ -96,7 +96,7 @@ for (const number of numbers) {
 
 // 3. Створити масив з 10 елементів числового, стірчкового і булевого типу. За допомогою if та typeof вивести тільки булеві елементи
 
-let arrTypeof = [1, 'hello', true, 456, 'world', false, 455, -575,'okten', 'typeof'];
+let arrTypeof = [1, 'hello', true, 456, 'world', false, 455, -575, 'okten', 'typeof'];
 
 for (const arrTypeofElement of arrTypeof) {
     if (typeof arrTypeofElement === 'boolean') {
@@ -120,15 +120,15 @@ for (const arrTypeofElement of arrTypeof) {
 
 // - Створити цикл for на 10  ітерацій з кроком 1. Вивести поточний номер кроку через console.log та document.write
 
-for (let i = 0; i <= 10; i++){
+for (let i = 0; i <= 10; i++) {
     console.log('step:', i);
     // document.write(`step : ${i} <br>`);
-};
+}
+
 // - Створити цикл for на 100 ітерацій з кроком 2. Вивести поточний номер кроку через console.log та document.write
 
-let step = 0;
-for (let i = 0; i <= 100; i++){
-    console.log('step:', step);
-    // document.write(`step : ${step} <br>`);
-    step+=2;
-};
+for (let i = 0; i <= 100; i += 2) {
+    console.log('step:', i);
+    // document.write(`step : ${i} <br>`);
+}
+

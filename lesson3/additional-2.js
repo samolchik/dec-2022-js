@@ -246,25 +246,25 @@ let usersList = [
     }
 ];
 
+
+document.write(`<div class="body">`)
+
 for (let i = 0; i < usersList.length; i++) {
     const usersListElement = usersList[i];
     // console.log(usersListElement);
 
     document.write(`<div class="users-box">`)
         document.write(`<div class="user-box">`)
-            document.write(`<h2>ID: ${usersListElement['id']} <br> Name: ${usersListElement['name']}  <br>Username: ${usersListElement['username']}</h2>`);
-            document.write(`<h3>email: ${usersListElement['email']} <br> phone: ${usersListElement['phone']}</h3>`)
-
-    for (const usersListElementKey in usersListElement) {
+            document.write(`<h2><span>id:</span> ${usersListElement['id']} <br> <span>Name:</span> ${usersListElement['name']}  <br> <span>Username:</span> ${usersListElement['username']}</h2>`);
+            document.write(`<h3><i class="fa-solid fa-envelope"></i> ${usersListElement['email']} <br> <i class="fa-solid fa-phone"></i> ${usersListElement['phone']}</h3>`)
             document.write(`<div className="address-block">`)
-                document.write(`<p>city: ${usersListElement[usersListElementKey]['city']}</p>`)
-                document.write(`<p>street: ${usersListElement[usersListElementKey]['street']}</p>`)
-                document.write(`<p>suite: ${usersListElement[usersListElementKey]['suite']}</p>`)
-                document.write(`<p>zipcode: ${usersListElement[usersListElementKey]['zipcode']}</p>`)
+                document.write(`<p><i>city:</i>  ${usersListElement.address.city}</p>`)
+                document.write(`<p><i>street:</i>  ${usersListElement.address.street}</p>`)
+                document.write(`<p><i>suite:</i>  ${usersListElement.address.suite}</p>`)
+                document.write(`<p><i>zipcode:</i>  ${usersListElement.address.zipcode}</p>`)
             document.write(`</div>`)
-                    // console.log(usersListElement['usersListElementKey']['city']);
-            }
         document.write(`</div>`)
     document.write(`</div>`)
 
 }
+document.write(`</div>`)
