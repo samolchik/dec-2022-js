@@ -31,18 +31,11 @@ let userCities = [
     {user_id: 2, country: 'Poland', city: 'Krakow'},
     {user_id: 4, country: 'USA', city: 'Miami'}
 ];
-
-
 function showArr(userCities) {
-    let newArray = [];
 
     for (const userCity of userCities) {
-        newArray.push(userCity);
+        console.log('newArray', userCity);
     }
-
-    console.log('newArray', newArray);
-
-    return newArray;
 }
 
 showArr(userCities);
@@ -184,11 +177,12 @@ let currencyValues = {
     "USD": 40,
     "EUR": 42
 }
+
 function exchange(sumUAH, currencyValues, exchangeCurrency) {
     let currentRate = currencyValues[exchangeCurrency.toUpperCase()];
-    let amount = sumUAH / currentRate;
+    let amountExchange = sumUAH / currentRate;
 
-    return amount;
+    return amountExchange;
 }
 
 let currentAmount = exchange(10000, currencyValues, 'usd');

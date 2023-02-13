@@ -7,9 +7,7 @@ let arrB = [];
 for (let i = 0; i < 100; i++) {
     if (i % 2 === 0) {
         arrA.push(i);
-        // arrA[i] =  i;
     } else {
-        // arrB[i] =  i;
         arrB.push(i);
     }
     // i % 2 === 0 ? arrA[i] = i : arrB[i] = i;
@@ -148,18 +146,15 @@ let usersWithCities = [];
 for (let i = 0; i < usersWithId.length; i++) {
     usersWithCities.push(usersWithId[i]);
 
-    if (usersWithCities[i].id === citiesWithId[i].user_id) {
-        console.log('citiesWithIdKey ', citiesWithId[i].user_id)
-        console.log('usersWithCities[i].id', usersWithCities[i].id)
+    for (let j = 0; j < citiesWithId.length; j++) {
 
-        usersWithCities[usersWithCities.length - 1].address = citiesWithId[i]
-
+        if (usersWithCities[i].id === citiesWithId[j].user_id) {
+            usersWithCities[i].address = citiesWithId[j]
+        }
     }
-
-
 }
 
-console.log('usersWithCities = ', usersWithCities)
+console.log('usersWithCities = ', usersWithCities);
 
 
 // 10. Дано масив: [ 'a', 'b', 'c'] . За допомогою циклу for зібрати всі букви в слово.
