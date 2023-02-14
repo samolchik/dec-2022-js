@@ -4,8 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e620b385-9bc9-4b15-9b84-933b7db20414" name="Changes" comment="add new directory lesson5 - functions expression">
+    <list default="true" id="e620b385-9bc9-4b15-9b84-933b7db20414" name="Changes" comment="add new directory lesson5 - functions arrow">
+      <change afterPath="$PROJECT_DIR$/lesson6/array-functions.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson6/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson5/functions-part2.js" beforeDir="false" afterPath="$PROJECT_DIR$/lesson5/functions-part2.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson5/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/lesson5/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,7 +68,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1675192535561</updated>
-      <workItem from="1675192536741" duration="103530000" />
+      <workItem from="1675192536741" duration="105554000" />
     </task>
     <task id="LOCAL-00001" summary="add new directory lesson1">
       <created>1675195199028</created>
@@ -115,7 +119,14 @@
       <option name="project" value="LOCAL" />
       <updated>1676368401270</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="add new directory lesson5 - functions arrow">
+      <created>1676369586912</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1676369586912</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -129,6 +140,7 @@
     <MESSAGE value="add new directory lesson4 &quot;functions&quot;" />
     <MESSAGE value="add changes in files additional-3.js and functions.js" />
     <MESSAGE value="add new directory lesson5 - functions expression" />
-    <option name="LAST_COMMIT_MESSAGE" value="add new directory lesson5 - functions expression" />
+    <MESSAGE value="add new directory lesson5 - functions arrow" />
+    <option name="LAST_COMMIT_MESSAGE" value="add new directory lesson5 - functions arrow" />
   </component>
 </project>

@@ -113,8 +113,9 @@ let minNumber = (numbers) => {
             minNum = currentNum;
         }
     }
-
     console.log('minNum', minNum);
+
+    return minNum;
 }
 
 minNumber([0, 17, -20, 66, 100, -18]);
@@ -129,8 +130,9 @@ let getArraySum = (arr) => {
     for (const arrElement of arr) {
         res += arrElement;
     }
-
     console.log('arraySum', res);
+
+    return res;
 }
 
 getArraySum([1, 2, 10]);
@@ -144,6 +146,7 @@ function swap(array, index1, index2) {
     array[index2] = arraySwap;
 
     console.log('arraySwap', array);
+    return array;
 }
 
 swap([11, 22, 33, 44], 0, 1);
@@ -157,6 +160,8 @@ let exchange = (sumUAH, currencyValues, exchangeCurrency) => {
             let amountExchange = sumUAH / item.value;
 
             console.log('Your amount = ', amountExchange);
+
+            return amountExchange;
         }
     }
 }
