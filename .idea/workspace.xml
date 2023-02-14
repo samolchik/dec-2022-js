@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e620b385-9bc9-4b15-9b84-933b7db20414" name="Changes" comment="add new directory lesson4 &quot;functions&quot;">
+    <list default="true" id="e620b385-9bc9-4b15-9b84-933b7db20414" name="Changes" comment="add changes in files additional-3.js and functions.js">
+      <change afterPath="$PROJECT_DIR$/lesson5/functions-part2.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson5/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lesson3/additional-3.js" beforeDir="false" afterPath="$PROJECT_DIR$/lesson3/additional-3.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lesson4/functions.js" beforeDir="false" afterPath="$PROJECT_DIR$/lesson4/functions.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -43,7 +44,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/Users/olgasamijlenko/IdeaProjects/dec-2022-js/lesson3",
+    "last_opened_file_path": "/Users/olgasamijlenko/IdeaProjects/dec-2022-js",
     "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -54,8 +55,8 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/lesson3" />
       <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/lesson3" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -66,7 +67,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1675192535561</updated>
-      <workItem from="1675192536741" duration="94216000" />
+      <workItem from="1675192536741" duration="102393000" />
     </task>
     <task id="LOCAL-00001" summary="add new directory lesson1">
       <created>1675195199028</created>
@@ -103,7 +104,14 @@
       <option name="project" value="LOCAL" />
       <updated>1676240139485</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="add changes in files additional-3.js and functions.js">
+      <created>1676305277978</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1676305277978</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -115,6 +123,7 @@
     <MESSAGE value="add new directory lesson3 &quot;loops&quot;" />
     <MESSAGE value="made changes and add file additional-3.js" />
     <MESSAGE value="add new directory lesson4 &quot;functions&quot;" />
-    <option name="LAST_COMMIT_MESSAGE" value="add new directory lesson4 &quot;functions&quot;" />
+    <MESSAGE value="add changes in files additional-3.js and functions.js" />
+    <option name="LAST_COMMIT_MESSAGE" value="add changes in files additional-3.js and functions.js" />
   </component>
 </project>

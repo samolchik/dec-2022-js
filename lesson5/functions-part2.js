@@ -1,87 +1,76 @@
-// 1. Cтворити функцію, яка обчислює та повертає площу прямокутника зі сторонами а і б
-function areaRectangle(a, b) {
-    return a * b;
-}
+// ВСЕ ЗРОБИТИ СТРІЛОЧНИМИ ФУНКЦІЯМИ!
 
-console.log('areaRectangle', areaRectangle(2, 6))
+// 1. Cтворити функцію, яка обчислює та повертає площу прямокутника зі сторонами а і б
+let areaRectangle = (a, b) => a * b;
+
+console.log('areaRectangle', areaRectangle(2, 5))
 
 // 2. Cтворити функцію яка обчислює та повертає площу кола з радіусом r
 
 const PI = 3.14;
+let areaCircle = (r) => PI * r ** 2;
 
-function areaCircle(r) {
-    return PI * r ** 2
-}
-
-console.log('areaCircle', areaCircle(2))
+console.log('areaCircle', areaCircle(4));
 
 // 3. Cтворити функцію яка обчислює та повертає площу циліндру висотою h, та радіутом r
 
-function areaCylinder(h, r) {
-    return 2 * PI * r * h + 2 * PI * r ** 2
-}
+let areaCylinder = (h, r) => 2 * PI * r * (h + r);
 
-console.log('areaCylinder', areaCylinder(2, 6))
+console.log('areaCylinder', areaCylinder(3, 6))
 
 // 4. Cтворити функцію яка приймає масив та виводить кожен його елемент
 
-let userCities = [
-    {user_id: 3, country: 'USA', city: 'Portland'},
-    {user_id: 1, country: 'Ukraine', city: 'Ternopil'},
-    {user_id: 2, country: 'Poland', city: 'Krakow'},
-    {user_id: 4, country: 'USA', city: 'Miami'}
-];
-function showArr(userCities) {
+let arr = [1, 'hello', true, 456, 'okten', 'typeof'];
+let showArrItem = (arr) => {
 
-    for (const userCity of userCities) {
-        console.log('newArray', userCity);
+    for (const item of arr) {
+        // console.log('newArray', arr);
     }
 }
 
-showArr(userCities);
+showArrItem(arr);
 
 // 5. Cтворити функцію, яка створює параграф з текстом. Текст задати через аргумент
 
-function createText(text) {
-    return document.write(`<p>${text}</p>`);
+let createText = (text) => {
+    document.write(`<p>${text}</p>`);
 }
 
-createText('Hello! Glad to see you)');
+createText('Hello! Glad to see you ;)');
 
 
 // 6. Cтворити функцію яка створює ul з трьома елементами li. Текст li задати через аргумент всім однаковий
 
-function createUl(text) {
+let createUl = (text) => {
     let html = `<ul>
         <li>${text}</li>
         <li>${text}</li>
         <li>${text}</li>
     </ul>`;
 
-    return document.write(html);
+    document.write(html);
 }
 
-createUl('Hello! Glad to see you)');
+createUl('Good morning ;)');
 
-// 7. Cтворити функцію, яка створює ul з трьома елементами li. Текст li задати через аргумент всім однаковий.
+// 7. Cтворити функцію, яка створює ul з елементами li. Текст li задати через аргумент всім однаковий.
 // Кількість li визначається другим аргументом, який є числовим (тут використовувати цикл)
 
-function createAdaptedUl(text, n) {
+let createAdaptedUl = (text, n) => {
     document.write(`<ul>`)
 
     for (let i = 0; i < n; i++) {
         document.write(`<li>${text}</li>`)
     }
+
     document.write(`</ul>`)
 }
 
-createAdaptedUl('Hello! Glad to see you)', 5);
+createAdaptedUl('It is 7th task', 5);
 
 // 8. Cтворити функцію, яка приймає масив примітивних елементів (числа,стрінги,булеві), та будує для них список
 
-let arrTypeof = [1, 'hello', true, 456, 'world', false, 455, -575, 'okten', 'typeof'];
-
-function createList(arrTypeof) {
+let createList = (arrTypeof) => {
     document.write(`<ul>`)
 
     for (let i = 0; i < arrTypeof.length; i++) {
@@ -90,10 +79,10 @@ function createList(arrTypeof) {
     document.write(`</ul>`)
 }
 
-createList(arrTypeof);
+createList([1, 'hello', true, 456, 'okten', 'typeof']);
 
 
-// 9. Cтворити функцію яка приймає масив об'єктів з наступними полями id,name,age , та виводить їх в документ.
+// 9. Cтворити функцію яка приймає масив об'єктів з наступними полями id,name,age, та виводить їх в документ.
 // Для кожного об'єкту окремий блок.
 
 let users = [
@@ -103,23 +92,18 @@ let users = [
     {id: 4, name: 'olya', age: 28, status: false}
 ];
 
-function usersInfo(users) {
-    document.write(`<ul>`)
+let usersInfo = (users) => {
 
-    for (let i = 0; i < users.length; i++) {
-        document.write(`<li>id: ${users[i].id} --- name: ${users[i].name} --- age: ${users[i].age}</li>`)
+    for (const user of users) {
+        document.write(`<div>id: ${user.id} --- name: ${user.name} --- age: ${user.age}</div>`)
     }
-    document.write(`</ul>`)
 }
 
 usersInfo(users);
 
 
-// 10. Cтворити функцію яка повертає найменьше число з масиву
-
-let numbers = [2, 17, 13, 6, 22, 31, 45, 66, 100, -18];
-
-function minNumber(numbers) {
+// 10. Cтворити функцію, яка повертає найменьше число з масиву
+let minNumber = (numbers) => {
     let minNum = numbers[0];
 
     for (let i = 0; i < numbers.length; i++) {
@@ -130,62 +114,52 @@ function minNumber(numbers) {
         }
     }
 
-    return minNum;
+    console.log('minNum', minNum);
 }
 
-console.log('minNumber', minNumber(numbers));
+minNumber([0, 17, -20, 66, 100, -18]);
+
 
 // 11. Cтворити функцію sum(arr), яка приймає масив чисел, сумує значення елементів масиву та повертає його.
 // Приклад sum([1,2,10]) //->13
 
-let arr = [1, 2, 10];
-
-function getArraySum(arr) {
+let getArraySum = (arr) => {
     let res = 0;
 
     for (const arrElement of arr) {
         res += arrElement;
     }
 
-    return res;
+    console.log('arraySum', res);
 }
 
-console.log('getArraySum', getArraySum(arr));
-
+getArraySum([1, 2, 10]);
 
 // 12. Cтворити функцію swap(arr,index1,index2). Функція міняє місцями знaчення у відповідних індексах
 // Приклад  swap([11,22,33,44],0,1) //=> [22,11,33,44]
-
-let array = [11, 22, 33, 44];
 
 function swap(array, index1, index2) {
     let arraySwap = array[index1];
     array[index1] = array[index2];
     array[index2] = arraySwap;
+
+    console.log('arraySwap', array);
 }
 
-swap(array, 0, 1);
-console.log('arraySwap', array);
+swap([11, 22, 33, 44], 0, 1);
 
 // 13. Написати функцію обміну валюти exchange(sumUAH,currencyValues,exchangeCurrency)
 // Приклад exchange(10000,[{currency:'USD',value:40},{currency:'EUR',value:42}],'USD') // => 250
+let exchange = (sumUAH, currencyValues, exchangeCurrency) => {
+    for (const item of currencyValues) {
 
-// let sumUAH = Number(prompt("How much money in UAH do you want to exchange?"));
-// let exchangeCurrency = prompt("What currency do you want to convert it to? EUR or USD?");
+        if (item.currency === exchangeCurrency) {
+            let amountExchange = sumUAH / item.value;
 
-let currencyValues = {
-    "USD": 40,
-    "EUR": 42
+            console.log('Your amount = ', amountExchange);
+        }
+    }
 }
 
-function exchange(sumUAH, currencyValues, exchangeCurrency) {
-    let currentRate = currencyValues[exchangeCurrency.toUpperCase()];
-    let amountExchange = sumUAH / currentRate;
+exchange(10000, [{currency: 'USD', value: 40}, {currency: 'EUR', value: 42}], 'USD');
 
-    return amountExchange;
-}
-
-let currentAmount = exchange(10000, currencyValues, 'usd');
-console.log('Your amount = ', currentAmount);
-
-// alert('Your amount = ' + currentAmount);
