@@ -188,4 +188,32 @@ function exchange(sumUAH, currencyValues, exchangeCurrency) {
 let currentAmount = exchange(10000, currencyValues, 'usd');
 console.log('Your amount = ', currentAmount);
 
-// alert('Your amount = ' + currentAmount);
+
+//Замикання
+
+function close(name, age) {
+    let user = {name, age};
+    let sum = 0;
+
+    return {
+        getName() {
+            return user.name;
+        },
+        getAge() {
+            return user.age;
+        },
+        countSum() {
+            ++sum;
+        }
+    }
+}
+
+console.log(close('Olga', 34));
+
+let closing = close('Olga', 34);
+
+console.log(closing.getName());
+console.log(closing.getAge());
+console.log(closing.countSum());
+console.log(closing.countSum());
+
