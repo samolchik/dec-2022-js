@@ -4,12 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e620b385-9bc9-4b15-9b84-933b7db20414" name="Changes" comment="add new directory lesson6 &quot;array functions&quot;">
-      <change afterPath="$PROJECT_DIR$/lesson8/constructors-class.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lesson8/index.html" afterDir="false" />
+    <list default="true" id="e620b385-9bc9-4b15-9b84-933b7db20414" name="Changes" comment="add new directory lesson8 &quot;constructors_class&quot;">
+      <change afterPath="$PROJECT_DIR$/lesson9/dom.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson9/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson9/main.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lesson4/functions.js" beforeDir="false" afterPath="$PROJECT_DIR$/lesson4/functions.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lesson6/array-functions.js" beforeDir="false" afterPath="$PROJECT_DIR$/lesson6/array-functions.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson8/constructors-class.js" beforeDir="false" afterPath="$PROJECT_DIR$/lesson8/constructors-class.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,9 +21,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="CSS File" />
         <option value="HTML File" />
         <option value="JavaScript File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -69,7 +71,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1675192535561</updated>
-      <workItem from="1675192536741" duration="161998000" />
+      <workItem from="1675192536741" duration="183789000" />
     </task>
     <task id="LOCAL-00001" summary="add new directory lesson1">
       <created>1675195199028</created>
@@ -148,7 +150,14 @@
       <option name="project" value="LOCAL" />
       <updated>1676749200364</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="add new directory lesson8 &quot;constructors_class&quot;">
+      <created>1677429118189</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1677429118189</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -166,6 +175,7 @@
     <MESSAGE value="add changes in file &quot;functions-part2.js&quot;" />
     <MESSAGE value="add changes" />
     <MESSAGE value="add new directory lesson6 &quot;array functions&quot;" />
-    <option name="LAST_COMMIT_MESSAGE" value="add new directory lesson6 &quot;array functions&quot;" />
+    <MESSAGE value="add new directory lesson8 &quot;constructors_class&quot;" />
+    <option name="LAST_COMMIT_MESSAGE" value="add new directory lesson8 &quot;constructors_class&quot;" />
   </component>
 </project>
