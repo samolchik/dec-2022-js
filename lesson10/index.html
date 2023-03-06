@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="main.css">
+    <title>Events and LS</title>
+</head>
+<!--<body onload="counter()">-->
+<body>
+
+<div class="body">
+    <form name="userinfo">
+        <input type="text" name="name" id="name" placeholder="Enter your name">
+        <input type="text" name="surname" id="surname" placeholder="Enter your surname">
+        <input type="number" name="age" id="age" placeholder="Enter your age">
+        <button id="button">SEND</button>
+    </form>
+
+    <div id="info">
+        <h1>USER CART</h1>
+        <h3 id="userName">Name:</h3>
+        <h3 id="userSurName">Surname:</h3>
+        <h4 id="userAge">Age:</h4>
+    </div>
+
+    <div id="count">
+        <h2 id="number"></h2>
+    </div>
+
+    <a href="sessions.html" target="_blank">Open sessions page</a>
+
+    <div class="pagination">
+        <div id="content">
+            <ul id="ul"></ul>
+        </div>
+
+        <div class="buttons">
+            <a href="javascript:prevPage()" id="btn_prev"><i class="fa-solid fa-arrow-left"></i></a>
+            <a href="javascript:nextPage()" id="btn_next"><i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+    </div>
+
+    <form class="table" name="tableForm">
+        <fieldset>
+            <legend>Create your table:</legend>
+            <label>Number of columns</label><br>
+            <input class="input" id="column" type="number" name="column" value=""><br>
+            <label >Number of cells</label><br>
+            <input class="input" id="cell" type="number" name="cell" value=""><br>
+            <label >Cell contents</label><br>
+            <input class="input" id="cellContent" type="text" name="content" value=""><br>
+            <br>
+            <input id="submit" type="submit" value="Submit">
+        </fieldset>
+    </form>
+
+    <table id="table"></table>
+</div>
+
+
+<script src="event.js"></script>
+<script src="https://kit.fontawesome.com/2ce5f5462d.js" crossorigin="anonymous"></script>
+
+
+</body>
+</html>

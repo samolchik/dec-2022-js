@@ -1,0 +1,30 @@
+<meta charset="UTF-8">
+<meta name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>LS</title>
+
+<style>
+    body {
+        margin: 50px;
+    }
+</style>
+
+</head>
+<body>
+
+<script>
+
+    let dateArr = JSON.parse(localStorage.getItem('sessions'));
+
+    for (const item of dateArr) {
+        const div = document.createElement('div');
+        div.innerText = item;
+
+        document.body.appendChild(div);
+    }
+
+
+</script>
+</body>
+</html>
