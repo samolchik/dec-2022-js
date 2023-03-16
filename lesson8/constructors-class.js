@@ -40,11 +40,12 @@ console.log('sortUses', sortUses);
 // створити пустий масив, наповнити його 10 об'єктами Client
 
 function Client(id, name, surname, email, phone, order) {
-    this.id = id;
-    this.name = name;
-    this.surname = surname;
-    this.email = email;
-    this.phone = phone;
+    // this.id = id++;
+    // this.name = name;
+    // this.surname = surname;
+    // this.email = email;
+    // this.phone = phone;
+    User.call(this, id, name, surname, email, phone,)
     this.order = order;
 }
 
@@ -91,7 +92,8 @@ function Car(model, manufacturer, modelYear, maxSpeed, engine) {
         console.log(`модель - ${this.model}, виробник - ${this.manufacturer}, рік випуску - ${this.modelYear}, об'єм двигуна - ${this.engine}, максимальна швидкість - ${this.maxSpeed}`)
     };
     this.increaseMaxSpeed = function (newSpeed) {
-        this.maxSpeed = newSpeed;
+        const speed = this.maxSpeed += newSpeed
+        // this.maxSpeed = speed < 0 ? 0 = speed
     };
     this.changeYear = function (newValue) {
         this.modelYear = newValue;

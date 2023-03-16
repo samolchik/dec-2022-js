@@ -21,11 +21,13 @@ console.log('lowerCase =', STR.toLowerCase());
 
 let strDirty = ' dirty string   ';
 
-const strClean = strDirty
-    .replaceAll(' d', 'd')
-    .replaceAll('g   ', 'g')
+// const strClean = strDirty
+//     .replaceAll(' d', 'd')
+//     .replaceAll('g   ', 'g')
 
-console.log('strDirty =', `"${strClean}"`);
+const strClean = strDirty.trim()
+
+console.log('strDirty =', `${strClean}`);
 
 // 5. Напишіть функцію stringToArray(str), яка перетворює рядок на масив слів.
 // let arr = stringToArray(str); ['Ревуть', 'воли', 'як', 'ясла', 'повні']
@@ -88,9 +90,10 @@ const filter = coursesAndDurationArray.filter(value => value.monthDuration > 5);
 
 console.log('filter', filter);
 
-const addId = coursesAndDurationArray.map((value, index) => {
-    return {id: index + 1, title: value.title, monthDuration: value.monthDuration}
-})
+const addId = coursesAndDurationArray.map((value, index) => ({
+        ...value, id: index + 1
+    })
+)
 
 console.log('addId', addId);
 
@@ -154,11 +157,6 @@ const cards = [
         color: 'black',
     },
     {
-        cardSuit: 'spade',
-        value: 'joker',
-        color: 'black',
-    },
-    {
         cardSuit: 'diamond',
         value: '6',
         color: 'red',
@@ -201,11 +199,6 @@ const cards = [
     {
         cardSuit: 'diamond',
         value: 'king',
-        color: 'red',
-    },
-    {
-        cardSuit: 'diamond',
-        value: 'joker',
         color: 'red',
     },
     {
@@ -254,11 +247,6 @@ const cards = [
         color: 'red',
     },
     {
-        cardSuit: 'heart',
-        value: 'joker',
-        color: 'red',
-    },
-    {
         cardSuit: 'clubs',
         value: '6',
         color: 'black',
@@ -301,33 +289,25 @@ const cards = [
     {
         cardSuit: 'clubs',
         value: 'king',
-        color: 'black',
-    },
-    {
-        cardSuit: 'clubs',
-        value: 'joker',
         color: 'black',
     },
 ];
 
-const findSpadeAce = cards.find(value => value.value === 'ace' && value.cardSuit === 'spade');
 
+const findSpadeAce = cards.find(card => card.value === 'ace' && card.cardSuit === 'spade');
 console.log('findSpadeAce', findSpadeAce);
 
-const filter6 = cards.filter(item => item.value === '6');
-
+const filter6 = cards.filter(card => card.value === '6');
 console.log('filter6', filter6);
 
-const filterRed = cards.filter(item => item.color === 'red');
-
+const filterRed = cards.filter(card => card.color === 'red');
 console.log('filterRed', filterRed);
 
-const filterDiamond = cards.filter(item => item.cardSuit === 'diamond');
-
+const filterDiamond = cards.filter(card => card.cardSuit === 'diamond');
 console.log('filterDiamond', filterDiamond);
 
-const filterClubs = cards.filter(item => (item.value > +'8' || item.value > '8') && item.cardSuit === 'clubs');
-
+// const filterClubs = cards.filter(card => (card.value > +'8' || card.value > '8') && card.cardSuit === 'clubs');
+const filterClubs = cards.filter(card =>card.cardSuit === 'clubs' && ['9', "10", 'ace','jack','queen','king'].includes(card.value));
 console.log('filterClubs', filterClubs);
 
 //   10.  Взяти описану колоду карт, та за допомоги reduce упакувати всі карти по "мастях" в об'єкт
@@ -337,7 +317,15 @@ console.log('filterClubs', filterClubs);
 //     hearts:[],
 //     clubs:[]
 // }
+// V1
+// const box = cards.reduce((acc, current) => {
+//     acc[current.cardSuit].push(current);
+//   return acc;
+// }, { spade:[], diamond:[], heart:[], clubs:[] });
+//
+// console.log('box', box)
 
+// V2
 const sortCardSuit = cards.reduce((acc, item) => {
 
     switch (item.cardSuit) {
@@ -353,20 +341,7 @@ const sortCardSuit = cards.reduce((acc, item) => {
         case 'clubs':
             acc.clubs.push(item);
             break;
-        default:
     }
-
-    // or
-
-    // if (item.cardSuit === 'spade') {
-    //     acc.spades.push(item)
-    // } else if (item.cardSuit === 'diamond') {
-    //     acc.diamonds.push(item);
-    // } else if (item.cardSuit === 'heart') {
-    //     acc.hearts.push(item);
-    // } else {
-    //     acc.clubs.push(item);
-    // }
 
     return acc;
 }, {

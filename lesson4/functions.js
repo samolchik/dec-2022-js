@@ -215,5 +215,4 @@ let closing = close('Olga', 34);
 console.log(closing.getName());
 console.log(closing.getAge());
 console.log(closing.countSum());
-console.log(closing.countSum());
 

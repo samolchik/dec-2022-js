@@ -5,10 +5,7 @@
 // - клонувати його повністю, та додати клон в body.
 
 const block = document.createElement('div');
-block.classList.add('wrap');
-block.classList.add('collapse');
-block.classList.add('alpha');
-block.classList.add('beta');
+block.classList.add('wrap', 'collapse', 'alpha', 'beta');
 
 const text = document.createElement('h3');
 text.classList.add('desc');
@@ -197,15 +194,18 @@ mainContainer.classList.add('mainContainer');
 
 for (const item of coursesArray) {
     const container = document.createElement('div');
+    const title = document.createElement('h2');
+    const monthDuration = document.createElement('h4');
+    const modules = document.createElement('ul');
+
+    container.classList.add('container');
+    title.classList.add('caption');
     container.classList.add('container');
 
-    const title = document.createElement('h2');
-    title.innerText = item.title;
 
-    const monthDuration = document.createElement('h4');
+    title.innerText = item.title;
     monthDuration.innerText = `Duration: ${item.monthDuration} months & ${item.hourDuration} hours`;
 
-    const modules = document.createElement('ul');
 
     for (const module of item.modules) {
         const li = document.createElement('li');
@@ -218,38 +218,28 @@ for (const item of coursesArray) {
     mainContainer.append(container);
 }
 
-// document.body.appendChild(mainContainer);
+document.body.appendChild(mainContainer);
 
 //     - Створити довільний елемент з id = text та створити кнопку. Використовуючи JavaScript, зробіть так, щоб при натисканні на кнопку зникав елемент з id="text".
 
 const button = document.createElement('button');
-button.setAttribute('id', 'text' );
+button.setAttribute('id', 'text');
 button.innerText = 'Click';
-// document.body.appendChild(button);
+document.body.appendChild(button);
 
-// const buttonId = document.getElementById("text");
+const buttonId = document.getElementById("text");
+const toggleClass = () => {
+    buttonId.classList.toggle('text');
+};
 
-// const toggleKlass = () => {
-//     buttonId.classList.toggle('text');
-// };
-//
-// buttonId.addEventListener("click", toggleKlass);
+buttonId.addEventListener("click", toggleClass);
 
 //   - створити інпут, який приймає вік людини та кнопку, яка підтверджує дію. При натисканні на кнопку зчитати інформацію з інпуту та перевірити вік чи меньше він ніж 18, та повідомити про це користувача
 
-const input = document.createElement('input');
-const btn = document.createElement('button');
-btn.setAttribute('id', 'btn' );
-btn.innerText = 'Відправити'
-
-// document.body.append(input, btn);
-
-const infoUser = document.getElementsByTagName("input");
-const sendBtn = document.getElementById("btn");
-
-
-
-
-// *** Створити 3 інпута та кнопку. Один визначає кількість рядків, другий - кількість ячеєк, третій вмиіст ячеєк.
-//     При натисканні кнопки, вся ця інформація зчитується і формується табличка, з відповідним вмістом.
-// (Додатковачастина для завдання)
+const form = document.forms.securityAge;
+form.onsubmit = function (e) {
+    e.preventDefault();
+    if (this.age.value < 18) {
+        alert('You are still small!')
+    }
+}
