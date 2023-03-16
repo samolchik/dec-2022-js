@@ -11,6 +11,25 @@ body {
     gap: 50px;
 }
 
+.form {
+    padding: 10px;
+    width: 300px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    border: 1px solid black;
+}
+
+.label {
+    display: flex;
+    justify-content: space-between;
+}
+
+.label > input {
+    width: 200px;
+}
+
 #info {
     padding: 30px;
     display: flex;
@@ -55,6 +74,7 @@ h1 {
 }
 
 .buttons {
+    margin-top: 10px;
     display: flex;
     justify-content: space-evenly;
 }

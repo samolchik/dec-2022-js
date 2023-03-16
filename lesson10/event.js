@@ -46,7 +46,7 @@ function counter() {
 // а побудувати дом структуру під кожну сессію.
 
 const date = JSON.parse(localStorage.getItem('sessions')) || [];
-date.push(new Date());
+date.push(new Date().toISOString());
 localStorage.setItem('sessions', JSON.stringify(date));
 
 // =========================
@@ -156,56 +156,100 @@ let users = [
     {name: 'vasya', age: 31, status: false}
 ];
 
-const content = document.getElementById('content');
-const ul = document.getElementById("ul");
-
-const itemsOnPage = 10;
-let currentPage = 1;
-
-const numPages = (usersArr) => {
-    return Math.ceil(usersArr.length / itemsOnPage);
-};
-
-let pages = numPages(users);
-
-const changePage = (page) => {
-    if (page >= 1 && pages >= 0 && !users.length) {
-        return;
-    }
-
-    if (page < 1) page = 1;
-    if (page > pages) page = pages;
-
-    ul.innerHTML = "";
-
-    let min = (page - 1) * itemsOnPage;
-    let max = page * itemsOnPage;
-
-    for (let i = min; i < max && i < users.length; i++) {
-        if (i <= 0) i = 0;
-
-        if (i <= users.length && i >= 0) {
-            ul.innerHTML += `
-              <li class="item">
-                   <h4> ${users[i].name.toUpperCase()}</h4>
-                  <p>age: ${users[i].age}  <br> status: ${users[i].status}</p>
-              </li>`;
-        }
-    }
-};
-
-const nextPage = () => {
-    if (currentPage < pages) changePage(++currentPage);
-};
-
-const prevPage = () => {
-    if (currentPage > 1) changePage(--currentPage);
-};
-
+// const content = document.getElementById('content');
+// const ul = document.getElementById("ul");
+//
+// const itemsOnPage = 10;
+// let currentPage = 1;
+//
+// const numPages = (usersArr) => {
+//     return Math.ceil(usersArr.length / itemsOnPage);
+// };
+//
+// let pages = numPages(users);
+//
+// const changePage = (page) => {
+//     if (page >= 1 && pages >= 0 && !users.length) {
+//         return;
+//     }
+//
+//     if (page < 1) page = 1;
+//     if (page > pages) page = pages;
+//
+//     ul.innerHTML = "";
+//
+//     let min = (page - 1) * itemsOnPage;
+//     let max = page * itemsOnPage;
+//
+//     for (let i = min; i < max && i < users.length; i++) {
+//         if (i <= 0) i = 0;
+//
+//         if (i <= users.length && i >= 0) {
+//             ul.innerHTML += `
+//               <li class="item">
+//                    <h4> ${users[i].name.toUpperCase()}</h4>
+//                   <p>age: ${users[i].age}  <br> status: ${users[i].status}</p>
+//               </li>`;
+//         }
+//     }
+// };
+//
+// const nextPage = () => {
+//     if (currentPage < pages) changePage(++currentPage);
+// };
+//
+// const prevPage = () => {
+//     if (currentPage > 1) changePage(--currentPage);
+// };
+//
 window.onload = () => {
-    changePage(1);
+    // changePage(1);
     counter();
 };
+
+let page = 1;
+
+const prev = document.getElementById('prev');
+const next = document.getElementById('next');
+
+prev.addEventListener('click', () => handler(page -= 1));
+next.addEventListener('click', () => handler(page += 1));
+handler(page);
+
+function handler(page, limit = 10) {
+    const content = document.getElementById('content');
+
+    const newArr = [];
+    const startIndex = (page - 1) * limit;
+    let endIndex = page * limit;
+
+    if (endIndex < users.length) {
+        next.removeAttribute('disabled');
+    } else {
+        next.setAttribute('disabled', 'disabled');
+        endIndex = users.length;
+    }
+    if (startIndex > 0) {
+        prev.removeAttribute('disabled');
+    } else {
+        prev.setAttribute('disabled', 'disabled');
+    }
+
+    for (let i = startIndex; i < endIndex; i++) {
+        const user = users[i];
+        const item = document.createElement('div');
+        const title = document.createElement('div');
+        const type = document.createElement('div');
+
+        console.log(user)
+        title.innerText = `${user.name.toUpperCase()}`;
+        type.innerText = `age: ${user.age}; status: ${user.status}`;
+
+        item.append(title, type);
+        newArr.push(item);
+    }
+    content.replaceChildren(...newArr);
+}
 
 // *** Створити 3 інпута та кнопку. Один визначає кількість рядків, другий - кількість ячеєк, третій вміст ячеєк.
 //     При натисканні кнопки, вся ця інформація зчитується і формується табличка, з відповідним вмістом.
@@ -229,7 +273,7 @@ tableForm.onsubmit = function (e) {
     let numCell = tableData.cell;
 
     for (let i = 0; i < numСolumn; i++) {
-        let td1 = document.createElement('td');
+        let td1 = document.createElement('th');
         td1.innerText = `column name `
         tr1.appendChild(td1);
     }
@@ -245,7 +289,5 @@ tableForm.onsubmit = function (e) {
     columnNumber.value = '';
     cellNumber.value = '';
     cellContent.value = '';
-
-
 };
 
